@@ -5,7 +5,7 @@ import classes from "./UsersList.module.css";
 // Adding a User List component
 const UsersList = (props) => {
   return (
-    <>
+    <React.Fragment>
       <Card classCSS={classes.users}>
         <ul>
           {props.users.map((user) => (
@@ -15,7 +15,7 @@ const UsersList = (props) => {
           ))}
         </ul>
       </Card>
-    </>
+    </React.Fragment>
   );
 };
 
